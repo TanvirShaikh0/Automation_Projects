@@ -14,7 +14,6 @@
                      filePattern="${log-path}/automation-%d{yyyy-MM-dd-HH-mm-ss}-%i.log.gz">
             <PatternLayout pattern="${log-pattern}"/>
             <Policies>
-                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
                 <SizeBasedTriggeringPolicy size="2MB"/>
             </Policies>
             <DefaultRolloverStrategy max="10"/>
